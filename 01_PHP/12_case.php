@@ -1,10 +1,10 @@
 <?php 
 
-    $nombre = "Carlos";
+    $nombre = "Andrea";
     $contrasena = 123456;
 
-switch ($nombre) {
-    case 'Ana':
+switch (true) {
+    case $nombre == "Ana" && $contrasena == 123456:
         echo "Bienvenida " . $nombre . " al programa";
         break;
     case 'Carlos':
