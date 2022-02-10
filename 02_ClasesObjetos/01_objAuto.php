@@ -16,6 +16,13 @@
     echo $objVehiculo->modelo;
     echo "<br>";
     echo "La distancia recorrida es: " . $objVehiculo->calculo_distancia();
+    echo "<br>";
+    echo $objVehiculo->getPlaca();
+    echo "<br>";
+    $objVehiculo->setPlaca("GTY-900");
+    echo "La placa actualiza es: " . $objVehiculo->getPlaca();
+    echo "<br>";
+
 
 
 

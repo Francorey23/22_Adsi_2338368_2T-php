@@ -4,7 +4,7 @@
 class Vehiculo
 {
     //Atributos
-    public $placa;
+    protected $placa;
     private $marca;
     public $modelo;
     public $kilometraje;
@@ -53,6 +53,14 @@ class Vehiculo
     //setter asignar la informacion al atributo marca
     public function setMarca($marca){
         $this->marca = $marca;
+    }
+
+    public function getPlaca(){
+        return $this->placa;
+    }
+
+    public function setPlaca($placa){
+        $this->placa = $placa;
     }
 
 }
