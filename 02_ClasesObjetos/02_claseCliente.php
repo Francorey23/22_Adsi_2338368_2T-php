@@ -1,6 +1,6 @@
 <?php
 
-    class Usuario{
+    class Cliente{
 
 
         //Atributos public, private, protected, static
@@ -8,7 +8,7 @@
 
         protected $strNombre;
         private $strEmail;
-        private $intEdad;
+        public $intEdad;
         private $intclave;
         protected $fechaRegistro; 
         static $strEstado = "Activado";
