@@ -19,7 +19,7 @@
             $idUsuario = $this->db->lastInsertId();
             return $idUsuario;
         }
-
+        //VER TODOS LOS USUARIOS
         public function getUsuarios(){
             $rows = Null;
             $tabla = $this->db->prepare("SELECT id, nombre, email, password FROM usuario");
@@ -28,6 +28,18 @@
                 $rows[] = $result;
             }
             return $rows;
+        }
+        //VER 1 USUARIO
+        public function getIdusuario($id){
+            $rows = null;
+            $tabla = $this->db->prepare("SELECT id, nombre, email FROM usuario WHERE id = :id");
+            $tabla->bindParam(':id',$id);
+            $tabla->execute();    
+            while ($result = $tabla->fetch()) {
+                $rows[] = $result;
+            }
+            return $rows;
+
         }
 
         public function editarUsuario($id, $nombre, $email, $password){
@@ -46,6 +58,8 @@
             $tabla->execute();
             return $tabla;
         }
+
+        
 
 
 
