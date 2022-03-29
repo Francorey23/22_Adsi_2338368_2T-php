@@ -66,7 +66,5 @@
     -->
   </body>
   <!-- pie de pagina-->
-  <footer>
-    <center>Copyright 2022 version 1.1</center>
-  </footer>
+  
 </html>

@@ -3,6 +3,8 @@ require_once("plantilla/plantillaFormulario.php");
 ?>
 <div class="formulario">
 
+    <h3>Formulario Registro</h3>
+
 <form action="" method="" >
     <div class="mb-3">
         <label>Nombres completos</label>
