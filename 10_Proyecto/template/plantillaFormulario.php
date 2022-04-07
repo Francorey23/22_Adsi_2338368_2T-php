@@ -17,6 +17,10 @@
  
 </head>
 <style>
+    .formulario{
+    width: 50%;
+    margin: 40px auto 0;
+}
     i{
       font-size: 20px;
      }

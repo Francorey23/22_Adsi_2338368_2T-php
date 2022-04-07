@@ -12,7 +12,7 @@
             //terminar el proceso de ejecucion de codigo hasta este punto
             //die();
             //header me permite ir a otro archivo 
-            header('Location: ../vista/perfil.php');
+            header('Location: ../vista/index.php');
         }else{
             header('Location: ../../Index.php');
         }

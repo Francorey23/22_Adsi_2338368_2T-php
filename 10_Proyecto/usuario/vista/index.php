@@ -27,7 +27,7 @@
                 <td>Otto</td>
                 <td>@mdo</td>
                 <td>
-                  <a href="update.php?=id<?= $listarUsuario['id'];?>" class="btn btn-warning">Editar</a>
+                  <a href="update.php?=id<?= $listarUsuario['id'];?>" class="btn btn-warning btn-sm">Editar</a>
                   <a href="delete.php=id<?= $listarUsuario['id']?>" class="btn btn-danger">Eliminar</a>
                 </td>
             </tr>
